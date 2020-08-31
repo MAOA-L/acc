@@ -1,0 +1,14 @@
+<!-- <view class="cu-bar margin-top bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>按钮颜色
+  </view>
+  <view class="action">
+    <text class="text-df margin-right-sm">阴影</text>
+    <switch class="sm" bindchange="SetShadow"></switch>
+  </view>
+</view> -->
+<view class="grid col-5 padding-sm">
+  <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key>
+    <button class="cu-btn round bg-{{item.name}} animation-{{animation==item.title?'shake':''}} shadow basis-sm" bindtap="toggle" data-class="{{item.title}}">{{item.title}}</button>
+  </view>
+</view>
