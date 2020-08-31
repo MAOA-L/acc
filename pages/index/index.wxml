@@ -9,6 +9,6 @@
 </view> -->
 <view class="grid col-5 padding-sm">
   <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key>
-    <button class="cu-btn round bg-{{item.name}} animation-{{animation==item.title?'shake':''}} shadow basis-sm" bindtap="toggle" data-class="{{item.title}}">{{item.title}}</button>
+    <button class="cu-btn round bg-{{c_color==item.title?item.name:'grey'}} animation-{{animation==item.title?'shake':''}} shadow basis-sm" bindtap="toggle" data-class="{{item.title}}">{{item.title}}</button>
   </view>
 </view>

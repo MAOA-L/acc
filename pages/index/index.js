@@ -22,7 +22,8 @@ Page({
     var anmiaton = e.currentTarget.dataset.class;
     var that = this;    
     that.setData({
-      animation: anmiaton
+      animation: anmiaton,
+      c_color: anmiaton
     })
     setTimeout(function() {
       that.setData({

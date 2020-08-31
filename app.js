@@ -90,11 +90,11 @@ App({
       name: 'brown',
       color: '#a5673f'
     },
-    {
-      title: '玄灰',
-      name: 'grey',
-      color: '#8799a3'
-    },
+    // {
+    //   title: '玄灰',
+    //   name: 'grey',
+    //   color: '#8799a3'
+    // },
     {
       title: '草灰',
       name: 'gray',
@@ -110,6 +110,11 @@ App({
       name: 'white',
       color: '#ffffff'
     },
+    // {
+    //   title: '灰色',
+    //   name: 'grey',
+    //   color: '#ffffff'
+    // },
   ]
   }
 })
