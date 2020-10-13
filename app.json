@@ -2,16 +2,17 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/index_2/index",    
+    "pages/index_2/index",
     "pages/mine/mine",
     "pages/about/about/about",
     "pages/about/home/home",
     "pages/about/log/log",
     "pages/about/test/filter",
     "pages/about/test/list",
-    "pages/about/test/test"
+    "pages/about/test/test",
+    "pages/moments/moments"
   ],
-  "entryPagePath": "pages/index/index",
+  "entryPagePath": "pages/moments/moments",
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -22,8 +23,8 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
+        "pagePath": "pages/moments/moments",
+        "text": "片刻"
       },
       {
         "pagePath": "pages/about/home/home",

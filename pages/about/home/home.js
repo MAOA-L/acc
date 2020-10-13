@@ -8,6 +8,8 @@ Component({
     starCount: 0,
     forksCount: 0,
     visitTotal: 0,
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    hasUserInfo: false,
   },
   attached() {
     console.log("success")
@@ -32,9 +34,9 @@ Component({
         }, 20)
       } else {
         that.setData({
-          starCount: that.coutNum(3000),
+          starCount: that.coutNum(3),
           forksCount: that.coutNum(484),
-          visitTotal: that.coutNum(24000)
+          visitTotal: that.coutNum(24)
         })
       }
     }
@@ -106,14 +108,14 @@ Component({
         current: 'https://image.weilanwl.com/color2.0/zanCode.jpg' // 当前显示图片的http链接      
       })
     },
+    getUserInfo: function(e) {
+      console.log(e)
+      app.globalData.userInfo = e.detail.userInfo
+      this.setData({
+        userInfo: e.detail.userInfo,
+        hasUserInfo: true
+      })
+    },
   },
   
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }
 })

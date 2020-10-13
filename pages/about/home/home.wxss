@@ -44,3 +44,9 @@ map,.mapBox{
   width: 750rpx;
   height: 300rpx;
 }
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
